@@ -12,11 +12,11 @@
 
 @layer components {
   .tw-timer-container {
-    @apply w-[20rem] h-[20rem] flex justify-center items-center rounded-full bg-gradient-to-t to-pmd-blue-600 from-pmd-blue-900  shadow-2xl shadow-pmd-blue-600;
+    @apply w-[22rem] h-[22rem] flex justify-center items-center rounded-full bg-gradient-to-t to-pmd-blue-600 from-pmd-blue-900  shadow-2xl shadow-pmd-blue-600;
   }
 
   .tw-timer {
-    @apply w-[17rem] h-[17rem] flex justify-center items-center rounded-full text-6xl bg-pmd-blue-900;
+    @apply w-[19rem] h-[19rem] flex justify-center items-center rounded-full text-6xl bg-pmd-blue-900;
   }
 
   .tw-infoContainer {
