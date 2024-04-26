@@ -10,6 +10,7 @@ import useCalculateTime from "./hooks/useCalculateTime";
 import { controllers } from "./constants/constants";
 
 const App = () => {
+  
   const { pomodoro, selectedControl, setPomodoro, setSelectedControl, resetTimerValues, getRemainingTimePercentage } = useTimer();
   const { minutes, seconds } = useCalculateTime({ pomodoro, selectedControl });
   const [isSettingsOn, setIsSettingsOn] = useState(false);

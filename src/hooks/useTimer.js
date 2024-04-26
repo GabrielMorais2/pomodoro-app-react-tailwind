@@ -4,10 +4,12 @@ import { FormDataContext } from "../context/FormDataContext";
 import ring from "../assets/bell-ring.mp3";
 
 const useTimer = () => {
+
   const { formData } = useContext(FormDataContext);
   const [selectedControl, setSelectedControl] = useState(0);
   const [pomodoro, setPomodoro] = useState(stages);
   const periodId = useRef(stages.period);
+
   const Sound = () => {
     const audio = new Audio(ring);
     return audio.play();
@@ -30,10 +32,13 @@ const useTimer = () => {
 
   useEffect(() => {
     let timer = null;
+
     if (!pomodoro.isPaused) {
+      
       timer = setInterval(() => {
         setPomodoro((prevPomodoro) => {
           if (prevPomodoro[controllers[selectedControl].value] === 0) {
+            
             setSelectedControl((prevState) => {
               if (periodId.current % 8 === 0) {
                 return 2;
